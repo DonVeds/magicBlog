@@ -1,0 +1,21 @@
+{
+  "name": "magic-blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/DonVeds/magicBlog.git",
+  "author": "Dmitry <donveds@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-svelte": "^4.0.5",
+    "sass": "^1.23.7",
+    "svelte": "^3.16.4"
+  },
+  "browserslist": [
+    "last 1 chrome versions"
+  ],
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  }
+}
