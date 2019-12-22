@@ -1,4 +1,6 @@
 <script>
+  import data from '../data/weather.json'
+
 	import Header from './header.svelte';
 </script>
 

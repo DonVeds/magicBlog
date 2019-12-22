@@ -24,7 +24,10 @@
             <p class="header-info-weather-text">{weather[0]}<br>{weather[1]}<br>{weather[2]}<br>{weather[3]}</p>
         </div>
     </div>
-    <img class="header-gif" src="https://lh3.googleusercontent.com/Ug1d5vabk0yuIcmboUU5gHhr2jl8queOt0lhQALi0uB_qKF7YrgUpd8NNX9hK_SSwIhUFHBk3zPUeml7qssNgmn49WwoDKD8jh1XkJKKC6kpy8L8gIn3LeBAHwND2bo_PetP8Z-vXxfiYPOUjVOaaq9xcZ8dYnayrMPtdY9hH883LtQbNeqSaO38NPdSuH1Jg6Et4MvQP_Rjwjced377A6tHkUMM67ZKbs1XHwzGzuGy4KEIuA0Xih6eW9o3GVJCK1FrhIH2rjb96ErWHJ5t3BNtDQCVQVyGlryKumVYAMCj77Gl9o4Jxql8jxdNyh_ExmwezBE1Ix2KEySb5pn33QGhJUURAmUyTWifjC3B70ZYs2FTku-60Pc_Uwscy12wN282BBmoLyEO60mwhnq2XZi2HfkR-5Fapv4jHhWjRY9yFDvEjo1dacChbKnPe4abAah1wTNXvtfA9_QCqygXQQsXvCCAo9J0kj_OYeOT34j0y2FJgO5dNe31bshulU-IFpI38fnaBv5g8NFFp6xDTjDHYdKZuNcQ14l4vHfdPidOW2HBg1X1l90tif6C0tpmwrP3hSnxoid7dh3hOkoclJipydyklh7F3saCD_Mv8j--8-o9owxf9iLRwz6vMQLnj9m4YncStTayhWfohF9YJdiB2gYuEtCDUeppCvx9U5hm5lxnALINzcmL=w500-h212-no" alt="">
+    <div class="header-sun">
+      <p class="header-sun-runes">ᛋᚢᚾ ᚹᛁᛚᛚ ᛒᛖ ᛒᚱᛁᚷᚻᛏ<br>ᛋᛏᚪᚱ ᚹᛁᛚᛚ ᚱᛁᛋᛖ<br>ᛞᚩᚾ'ᛏ ᛖᚪᛏ ᚣᛖᛚᛚᚩᚹ ᛋᚾᚩᚹ</p>
+      <img class="header-sun-pic" alt="runic sun" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/BlackSun.svg/1200px-BlackSun.svg.png"/>
+    </div>
 </header>
 
 <style>
@@ -37,7 +40,7 @@
             "name name name"
             "text text text"
             "line line line"
-            "ad info gif";
+            "ad info sun";
     }
 
     .header-the { 
@@ -134,8 +137,29 @@
         /* text-align: left; */
     }
 
-    .header-gif {
+    .header-sun {
         height: 80px;
+        display: flex;
+
     }
+
+    .header-sun-runes {
+      margin-top:10px;
+      font-size: 0.9em;
+    }
+
+    .header-sun-pic {
+      animation: spin 5s linear 0s infinite;
+      height: 70px;
+      width: 70px;
+    }
+    @keyframes spin {
+      from {transform:rotate(0deg);}
+      to {transform:rotate(360deg);}
+    }
+
+
+
+
 
 </style>
